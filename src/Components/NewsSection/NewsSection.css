@@ -1,0 +1,139 @@
+.news_section {
+  width: 100%;
+}
+
+.new_section_container {
+  min-height: 100vh;
+  background: url(../../assets/News-banner.png) no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  background-position: 63%;
+  width: 100%;
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: var(--padding-left-main);
+}
+
+.new_section_container p {
+  color: var(--text-w-color);
+  font-family: 'Clash Display', sans-serif;
+}
+
+.new_section_container p:nth-child(1) {
+  font-size: 4.5rem;
+  font-weight: var(--font-weight-bold);
+  word-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.new_section_container p:nth-child(2) {
+  font-size: 1.4rem;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-light);
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.new_section_main_container {
+  max-width: 650px;
+  display: grid;
+  row-gap: 1rem;
+}
+
+/* media query css  */
+@media screen and (max-width: 800px) {
+
+  /* we get shit done section css  */
+  .new_section_container {
+      padding-left: var(--padding-left-medium);
+  }
+
+  .new_section_container p:nth-child(1) {
+      font-size: 4rem;
+  }
+
+  .new_section_container p:nth-child(2) {
+      font-size: 1.4rem;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      line-height: 32px;
+  }
+  
+  .new_section_main_container {
+      max-width: 600px;
+      row-gap: .9rem;
+      margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 700px){
+
+  /* we get shit section  */
+  .new_section_container p:nth-child(1) {
+      font-size: 3rem;
+  }
+
+  .new_section_container p:nth-child(2) {
+      font-size: 1.3rem;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      line-height: 30px;
+  }
+
+  .new_section_main_container {
+      row-gap: .8rem;
+      margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .new_section_container {
+      padding-left: var(--padding-left-normal);
+  }
+
+  .new_section_main_container {
+      margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  /* we get shit done section  */
+  .new_section_container {
+      padding-left: var(--padding-left-small);
+  }
+
+  .new_section_main_container {
+      margin-right: 7.5rem;
+  }
+
+  .new_section_container p:nth-child(1) {
+      font-size: 2.5rem;
+      font-weight: var(--font-weight-semibold);
+  }
+
+  .new_section_container p:nth-child(2) {
+      font-size: 1.1rem;
+      word-spacing: 0px;
+      letter-spacing: 0px;
+      line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  /* we get shit done section  */
+  .new_section_container {
+      padding-left: var(--padding-left-little-small);
+  }
+
+  .footer_logo_email {
+      padding: var(--padding-standard-little-small);
+  }
+}

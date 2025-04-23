@@ -1,0 +1,321 @@
+
+/* Popup container styling */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .0125);
+  justify-content: right;
+  align-items: end;
+  z-index: 998;
+}
+
+/* Popup container active state to make it visible */
+.popup-container.active {
+    display: flex;
+}
+
+/* Popup box styling */
+.popup-box {
+    /* position: relative; */
+    background-color: #fff;
+    padding: 0 20px 0 20px;
+    margin: 0 2rem 2rem 0;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+
+.emo_btn, .attach_btn {
+  display: inline-block;
+  width: 40px; 
+  height: 40px;
+  line-height: 40px; 
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  }
+
+  #word-count {
+    font-size: 10px;
+    font-family: 'Clash Display', sans-serif;
+    text-align: right;
+    color: gray;
+    opacity: .6;
+  }
+
+  .uper{
+    border-top: 1px solid rgb(197, 197, 197);
+  }
+  .lower{
+    border-bottom: 1px solid rgb(197, 197, 197);
+    padding-bottom: 5px;
+  }
+  
+  .pop_sub{
+    padding: 10px 0;
+  }
+
+  .close-btn i{
+    font-size: 1.5rem;
+  }
+
+  .close-btn{
+    cursor: pointer;
+  }
+  
+  .pop_nav_head p{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: var(--font-weight-medium);
+  }
+
+  .pop_nav_pera p{
+    font-family: 'Clash Display', sans-serif;
+    color: gray; 
+    font-size: 13px;
+  }
+
+
+/* Hide the default file input */
+#file-upload {
+  display: none;
+}
+
+/* Style for the icon */
+.file-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.file-icon:hover {
+  color: #007bff;
+}
+
+/* Style for the submit button */
+.pop_sub_btn input {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Clash Display', sans-serif;
+  font-weight: var(--font-weight-medium);
+  }
+.pop_sub_btn input:hover{
+  background-color: #e7e7e7;
+  }
+
+
+.pop_logo img{
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.pop_nav_main{
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.pop_nav_con{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+textarea{
+  font-family: 'Poppins', sans-serif;
+  resize: none;
+  width: 100%;
+  opacity: .7;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+}
+
+#file-name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.pop_sub_child1{
+  width: 100%;
+}
+
+.pop_sub_child1 .emo_btn,
+.pop_sub_child1 .attach_btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pop_sub_con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pop_nav_child{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+}
+
+.form-group input{
+  padding: 5px 5px 5px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  opacity: .6;
+  font-size: 14px;
+}
+
+/* media query for popup  */
+@media screen and (max-width: 1200px) {
+  .popup-box {
+    width: 40%;
+  }   
+}
+@media screen and (max-width: 800px) {
+  .popup-box {
+    width: 50%;
+  }   
+}
+@media screen and (max-width: 650px) {
+  .popup-box {
+    width: 60%;
+    margin: auto auto;
+  }
+
+  .emo_btn, .attach_btn {
+    width: 30px; 
+    font-size: 20px;
+  }
+  .file-icon {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .popup-box {
+    width: 70%;
+  }
+
+  .pop_sub_btn input {
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  #file-name{
+    font-size: 16px;
+  }
+
+  #word-count {
+    font-size: 11px;
+  }
+
+  textarea {
+    padding: 7px;
+    font-size: .9rem;
+  }
+
+  .pop_nav_head p{
+    font-size: .8rem;
+  }
+
+  .pop_nav_pera p {
+    font-size: 0.7rem;
+  }
+
+  .close-btn i {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .popup-box {
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .file-icon {
+    font-size: 20px;
+  }
+
+  .emo_btn, .attach_btn {
+    font-size: 20px;
+    width: 20px; 
+
+  }
+
+  .pop_sub_btn input {
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+
+  #file-name{
+    font-size: 14px;
+  }
+
+  #word-count {
+    font-size: 10px;
+  }
+
+  textarea {
+    padding: 7px;
+    font-size: .9rem;
+  }
+
+  .pop_nav_head p{
+    font-size: .8rem;
+  }
+
+  .pop_nav_pera p {
+    font-size: 0.7rem;
+  }
+
+  .pop_logo img {
+    width: 40px;
+  }
+
+  .close-btn i {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  #file-name {
+    font-size: 13px;
+  }
+
+  .file-icon {
+    font-size: 18px;
+  }
+
+  .emo_btn, .attach_btn {
+    font-size: 18px;
+  }
+}
