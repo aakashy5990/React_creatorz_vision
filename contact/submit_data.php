@@ -8,10 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // $password = "";
     // $dbname = "review";
 
-    $servername = "127.0.0.1"; // Your database host
-    $username = "u597234860_vikashy263"; // Your database username
-    $password = "Aakashy@5990"; // Your database password
-    $dbname = "u597234860_popup_messages"; // Your database name
+    $servername = "Your database host"; 
+    $username = "Your database username"; 
+    $password = "Your database password";
+    $dbname = " Your database name";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
